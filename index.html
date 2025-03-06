@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Magnetism in Action</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- when we click on menu items it opens to particular part-->
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+        <script defer src="magnet.js"></script> 
+        <script defer src="content.js"></script> 
+        <script src="script.js"></script>
+        <script type="module" src="MuiTypography.jsx"></script>
+        <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script> 
+        function do(){
+            document.getElementsByClassName("des").innerHTML="next page";
+        }
+    </script>
+    
+    </head>
+    <body>
+
+
+
+
+
+
+<section id="banner">
+    <img src="images/lo.png" class="ima">
+<!--<img src ="images/loo.jpg" class="lo">
+  <ima src="images/moon.svg" class ="bg1">-->
+       <img src ="images/moon.svg" class="bg">
+       
+      <!-- <img src ="images/lo.png" class="logo">--->
+    
+<div class="banner-text">
+    
+        <h1>Start </br>your</br>thinking.</h1>
+        <p> Way for scientific findings. </p>
+
+    <div class=" banner-button">
+        <a href="#cal"><span> </span> Find Out</a>
+       
+        <a href="#intro"><span></span>Read more</a>
+    </div>
+
+</div>
+</section>
+
+
+
+
+
+<!--menu button -->
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#intro">INTRO</a></li>
+            <li><a href="#types">TYPES</a></li>
+            <li><a href="#search">SEARCH</a></li>
+            <li><a href="#cal">FLUX CALCULATOR</a></li>
+            <li><a href="#images">LOOPS</a></li>
+            <li><a href="#Application">APPLICATION</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menubutton">
+    <img src="images/menu.png" id="menu">
+</div>
+
+<script>
+    var menubutton = document.getElementById("menubutton")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    menubutton.onclick= function(){
+        if(sideNav.style.right=="-250px"){
+            sideNav.style.right="0";
+            menu.src="images/close.png";
+        }
+        else{
+            sideNav.style.right="-250px";
+            menu.src="images/menu.png";
+        }
+    }
+</script>
+<!--
+<script>
+let sideNav = document.getElementById("sideNav");
+let menuButton = document.getElementById("menubutton");
+let menuIcon = document.getElementById("menu");
+
+function toggleMenu() {
+    if (sideNav.style.right === "-250px" || sideNav.style.right === "") {
+        sideNav.style.right = "0px";
+        menuIcon.src = "images/close.png"; // Change to close icon
+    } else {
+        sideNav.style.right = "-250px";
+        menuIcon.src = "images/menu.png"; // Change back to menu icon
+    }
+}
+    
+
+
+// Attach event listener to the menu button
+menuButton.onclick = toggleMenu;
+</script>
+-->
+<!-- JavaScript for Menu -->
+<!--<script>
+    let sideNav = document.getElementById("sideNav");
+    let menuBtn = document.getElementById("menu");
+
+    menuBtn.onclick = function() {
+        if (sideNav.style.right === "-250px") {
+            sideNav.style.right = "0px";
+        } else {
+            sideNav.style.right = "-250px";
+        }
+    }
+
+</script>
+-->
+
+
+
+
+<section id="intro">
+    <div class="intro-box">
+    <div class="title-text">
+        <h1>Introduction to Magnetism</h1>
+    </div>
+    
+    <div class="wrapper" id="mainWrapper">
+        
+        <div id="outputSection" class="content">
+            <button class="remove-btn" onclick="clearContent('outputSection')">X</button>
+            <p>This is the output.</p>
+        </div>
+        
+        <button class="toggle-btn" onclick="toggleContent('historyInfo')"> History</button>
+        <div id="historyInfo" class="content">
+            <button class="remove-btn" onclick="clearContent('historyInfo')">X</button>
+            <h2>📜 Timeline of Magnetic Field Discoveries</h2>
+            <ul>
+                <li>🧲 Ancient use of lodestones.</li>
+                <li>📖 1600: William Gilbert’s studies on Earth’s magnetism.</li>
+                <li>⚡ 1820: Hans Christian Ørsted’s discovery of electromagnetism.</li>
+                <li>🔄 1831: Michael Faraday’s electromagnetic induction.</li>
+                <li>🚀 20th-century advancements in electromagnetism.</li>
+            </ul>
+        </div>
+
+        <button class="toggle-btn" onclick="toggleContent('magnetismInfo')"> Magnetism</button>
+        <div id="magnetismInfo" class="content">
+            <button class="remove-btn" onclick="clearContent('magnetismInfo')">X</button>
+            <h2>🧲 Understanding Magnetism</h2>
+            <p>Magnetism is a physical phenomenon produced by the motion of electric charges, resulting in attractive and repulsive forces between objects.</p>
+            <h3>Key Concepts:</h3>
+            <ul>
+                <li>🌍 Magnetic Fields</li>
+                <li>⚡ Electromagnetism</li>
+                <li>🔩 Permanent Magnets</li>
+                <li>🌀 Electromagnets</li>
+                <li>💡 Applications in technology</li>
+            </ul>
+        </div>
+</div>
+    </div>
+</section>
+        
+
+    <!-- services -->
+     <section id="types">
+        <div class="controls">
+            <p>TYPES OF MATERIALS</p>
+            <input type="text" class="search-box" placeholder="Search materials..." onkeyup="filterMaterials()">
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </div>
+    
+    
+    
+        <div class="types-box">
+            
+    
+    
+    
+    
+            <div class="single-box" data-name="ferromagnetic">
+                <img src="images/Fer.png">
+                <h3>Ferromagnetic materials</h3>
+                <div class="description">
+                    <p><u>Definition:</u> Strong magnetic materials that retain magnetization.</p><br>
+                    <u>Key Characteristics:</u>
+    High magnetic permeability.
+    Strong attraction to magnetic fields.
+    Exhibit a hysteresis loop.
+    Retain magnetization even after the external field is removed.<br>
+                    <p><u>Examples:</u> Iron, Cobalt, Nickel.</p>
+                    <u>Applications:</u>
+    Permanent magnets,
+    Transformers,
+    Magnetic storage devices.</br>
+                    <button onclick="openVideo()">Watch Video</button>
+                    <script>
+                        function openVideo() {
+                            window.open("https://youtu.be/FmOLAvvb61U?si=BY0dNtx-spngrPco", "_blank");
+                        }
+                        
+                        </script>
+                </div>.
+            </div>
+    
+    
+    
+    
+            <div class="single-box" data-name="paramagnetic">
+                <img src="images/Par.jpg">
+                <h3>Paramagnetic materials</h3>
+                <div class="description">
+                    <p><u>Definition:</u> Weakly attracted to magnetic fields, do not retain magnetization.</p><br>
+                    <u>Characteristics:</u>
+    Positive but small magnetic susceptibility.
+    Alignment of magnetic dipoles only in the presence of an external field.<br>
+    
+                    <p><u>Examples:</u> Aluminum, Platinum, Magnesium.</p>
+                    <u>Applications:</u>
+    Used in scientific instruments and materials research.</br>
+                    <button onclick="openVideo()">Watch Video</button>
+                    <script>
+                        function openVideo() {
+                            window.open("https://youtu.be/HJKXzWLQpbM?si=HuaEh7XmwJaBdP3y", "_blank");
+                        }
+                        
+                        </script>
+    
+                </div>
+            </div>
+    
+    
+    
+    
+    
+            <div class="single-box" data-name="diamagnetic">
+                <img src="images/Dia.jpg">
+                <h3>Diamagnetic materials</h3>
+                <div class="description">
+                    
+                    <p><u>Definition:</u> Weakly repelled by magnetic fields.</p></br>
+                    <u>Characteristics:</u>
+    Negative magnetic susceptibility.
+    Oppose the external magnetic field slightly.
+    Magnetic effect is very weak compared to paramagnetic and ferromagnetic materials.</br>
+    
+                    <p><u>Examples:</u> Copper, Gold, Bismuth.<br>
+                    </p><u>Applications:</u>
+                    Magnetic levitation (e.g., diamagnetic levitation of graphite),
+                    Magnetic shielding.</br>
+                    <button onclick="openVideo()">Watch Video</button>
+                    <script>
+                        function openVideo() {
+                            window.open("https://youtu.be/F1Gd8BhXYNY?si=f1Fz92A7MQ8eI8wF", "_blank");
+                        }
+                        
+                        </script>
+    
+                </div>
+            </div>
+    
+    
+    
+    
+            <div class="single-box" data-name="ferrimagnetic">
+                <img src="images/Ferri.png">
+                <h3>Ferrimagnetic materials</h3>
+                <div class="description">
+                    <p>
+                    <u> Definition:</u> Similar to antiferromagnetic materials, but the opposing magnetic moments are unequal, resulting in a net magnetic moment.</br>
+                    <u>Characteristics:</u></br>
+                    Net magnetization is weaker than ferromagnetic materials.</br>
+                    Commonly occur in ferrites.</br>
+                    <u>Examples:</u>
+                    Magnetite (Fe₃O₄),
+                    Cobalt ferrite (CoFe₂O₄).</br>
+                    <u>Applications:</u>
+                    Used in magnetic cores for transformers,
+                    Magnetic recording media.<br>
+                    <button onclick="openVideo()">Watch Video</button>
+                    <script>
+                        function openVideo() {
+                            window.open("https://youtu.be/HOqXAJY2LO8?si=u7IjH6qqoSPyeYN8", "_blank");
+                        }
+                        
+                        </script>
+    
+                </div>
+            </div>
+    
+    
+    
+    
+            <div class="single-box" data-name="ferrimagnetic">
+                <img src="images/Anti.jpg">
+                <h3>Antiferrimagnetic materials</h3>
+                <div class="description">
+                    <p>
+                        <u>Definition:</u> Materials in which adjacent magnetic dipoles align in opposite directions, canceling out the net magnetic moment.</br>
+                        <u>Characteristics:</u></br>
+                        No net magnetization in the absence of an external field,
+                        Alignment occurs at temperatures below the Néel temperature.</br>
+                       <u> Examples:</u>
+                        Manganese oxide (MnO),
+                        Chromium,
+                        Hematite (Fe₂O₃).</br>
+                        <u>Applications:</u>
+                        Used in magnetic sensors and spintronics.</br>
+                    </p>
+                    <button onclick="openVideo()">Watch Video</button>
+                    <script>
+                        function openVideo() {
+                            window.open("https://youtu.be/eXFXI7Rji4I?si=Rt3y2XW8ppF67p2c", "_blank");
+                        }
+                        
+                        </script>
+                </div>
+            </div>
+    
+    
+    
+    
+    
+            <div class="single-box" data-name="superparamagnetic">
+                <img src="images/superpar.jpg">
+                <h3>Superparamagnetic materials</h3>
+                <div class="description">
+                    <p>
+                        <u>Definition:</u> Nanostructured materials that exhibit paramagnetic-like behavior but with stronger magnetic moments.<br>
+                        <u>Characteristics:</u>
+    No hysteresis or residual magnetization,
+    Strongly influenced by external fields.</br>
+                        <u>Examples:</u> Iron oxide nanoparticles, Cobalt nanoparticles.<br>
+                        <u>Applications:</u>
+    Biomedical imaging (e.g., MRI contrast agents),
+    Magnetic storage systems.</br>
+                    </p>
+                    <button onclick="openVideo()">Watch Video</button>
+                    <script>
+                        function openVideo() {
+                            window.open("https://youtu.be/sNUvKbltxpc?si=os8xR-d19mEMTYVg", "_blank");
+                        }
+                        </script>
+                </div>
+            </div>
+    
+    
+    
+    
+            
+            <div class="single-box" data-name="superconducting">
+                <img src="images/Supercond.png">
+                <h3>Superconducting materials</h3>
+                <div class="description">
+                    <p>
+                        <u>Definition:</u> Materials that completely expel magnetic fields below a critical temperature (Meissner effect).<br>
+                        <u>Characteristics:</u>
+                            Zero electrical resistance,
+                            Perfect diamagnetism.</br>
+                        <u>Examples:</u> Yttrium barium copper oxide (YBCO), Niobium, Lead.<br>
+                        <u>Applications:</u>
+                            Magnetic levitation (maglev trains)
+                            Particle accelerators.</br>
+                    </p>
+                    <button onclick="openVideo()">Watch Video</button>
+                    <script>
+                        function openVideo() {
+                            window.open("https://youtu.be/uAyna6t0sRY?si=PxtJH3aAweMJHmWP", "_blank");
+                        }
+                        
+                        </script>
+    
+                </div>
+            </div>
+    
+    
+        </div>
+        
+        </section>
+
+
+
+
+     <section id="search">
+        <div class="search-container">
+            <h1>SEARCH</h1>
+            <input type="text" id="searchInput" onclick="search()" placeholder="Type to search...">
+            <button onclick="search()" class="search-btn">Search</button>
+            <button onclick="clearSearch()" class="clear">Clear</button>
+            <div id="results" class="result-box"></div>
+        </div>
+    
+        <script>
+            function search() {
+                let query = document.getElementById("searchInput").value.trim();
+                
+                if (!query) {
+                    document.getElementById("results").innerHTML = "Please enter a search term.";
+                    return;
+                }
+        
+                fetch(`http://localhost:3000/search?q=${encodeURIComponent(query)}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Network response was not ok");
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    let resultBox = document.getElementById("results");
+                    resultBox.innerHTML = "";
+        
+                    if (data.length === 0) {
+                        resultBox.innerHTML = "No results found";
+                        return;
+                    }
+        
+                    // Create table structure
+                    let table = `<table border="1">
+                                    <tr>
+                                        <th>Material</th>
+                                        <th>Properties</th>
+                                        <th>Material Type</th>
+                                        <th>Examples</th>
+                                    </tr>`;
+                    data.forEach(element => {
+                        table += `<tr>
+                                    <td>${element.Material}</td>
+                                    <td>${element.Properties}</td>
+                                    <td>${element.Material_type}</td>
+                                    <td>${element.Examples}</td>
+                                  </tr>`;
+                    });
+                    table += "</table>";
+                    resultBox.innerHTML = table;
+                })
+                .catch(error => {
+                    console.error("Error fetching data:", error);
+                    document.getElementById("results").innerHTML = "Error fetching data. Please try again later.";
+                });
+            }
+        
+            function clearSearch() {
+                document.getElementById("searchInput").value = "";
+                document.getElementById("results").innerHTML = "";
+            }
+        </script>
+    </section>
+    
+
+
+
+
+
+     
+
+
+
+<section id="cal">
+    <div class="title-text">
+        <img src="images/calculator.svg" class="call">
+       
+    </div>
+    <p>CALCULATOR</p>
+    <h1>Magnetic Flux Calculator</h1>
+
+    <label for="magneticField">Magnetic Field Strength (B in Tesla):</label>
+    <input type="number" id="magneticField" placeholder="Enter B (in T)" step="any" required>
+
+    <label for="area">Area (A in square meters):</label>
+    <input type="number" id="area" placeholder="Enter A (in m²)" step="any" required>
+
+    <label for="angle">Angle (θ in degrees):</label>
+    <input type="number" id="angle" placeholder="Enter angle in degrees" step="any" required>
+
+    <button id="resultButton" onclick="calculateFlux()">Result</button>
+    <button id="backButton" onclick="resetCalculator()">Back</button>
+</section>
+
+<section id="resultSection" class="result-container">
+    <h3>Results</h3>
+    <table class="result-table">
+        <tr>
+            <th>Flux (Weber)</th>
+            <th>Conclusion</th>
+            <th>Examples</th>
+        </tr>
+        <tr>
+            <td id="fluxValue"></td>
+            <td id="fluxConclusion"></td>
+            <td id="fluxExamples"></td>
+        </tr>
+    </table>
+    <div id="calculationDetails"></div>
+    <div id="teslaValue"></div>
+</section>
+
+<script>
+    function calculateFlux() {
+        const field = parseFloat(document.getElementById("magneticField").value);
+        const area = parseFloat(document.getElementById("area").value);
+        const angle = parseFloat(document.getElementById("angle").value);
+
+        if (isNaN(field) || isNaN(area) || isNaN(angle) || area === 0) {
+            alert("Please fill in all fields correctly. Area must be greater than zero.");
+            return;
+        }
+
+        const thetaInRadians = (angle * Math.PI) / 180;
+        const flux = field * area * Math.cos(thetaInRadians);
+        const tesla = flux / area;
+        document.getElementById("fluxValue").innerText = `${flux.toFixed(4)} Wb`;
+
+        document.getElementById("calculationDetails").innerHTML = `
+            <p><strong>Calculation:</strong></p>
+            <p>Φ = B × A × cos(θ) ---> Formula</p>
+            <p>Φ = ${field} × ${area} × cos(${angle}°) ---> Substitution</p>
+            <p><strong>Flux Value:</strong> ${flux.toFixed(4)} Weber ---> Result</p>
+        `;
+
+        fetch(`http://localhost:3000/get-conclusion?flux=${flux.toFixed(4)}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("fluxConclusion").innerText = data.conclusion;
+                document.getElementById("fluxExamples").innerText = data.examples;
+            })
+            .catch(error => console.error("Error fetching conclusion:", error));
+
+        document.getElementById("teslaValue").innerHTML = `<h3><hr>Magnetic Field Strength:</h3><p>${tesla.toFixed(4)} Tesla</p>`;
+
+        document.getElementById("resultSection").classList.add("show");
+        scrollToResult();
+    }
+
+    function scrollToResult() {
+        const resultSection = document.getElementById("resultSection");
+        resultSection.style.marginTop = "50px";
+        resultSection.scrollIntoView({ behavior: "smooth" });
+    }
+
+    function resetCalculator() {
+        document.getElementById("magneticField").value = "";
+        document.getElementById("area").value = "";
+        document.getElementById("angle").value = "";
+        document.getElementById("fluxValue").innerText = "";
+        document.getElementById("fluxConclusion").innerText = "";
+        document.getElementById("fluxExamples").innerText = "";
+        document.getElementById("calculationDetails").innerHTML = "";
+        document.getElementById("teslaValue").innerHTML = "";
+        document.getElementById("resultSection").classList.remove("show");
+    }
+</script>
+
+</section>
+  
+
+
+
+
+
+<section id="images">
+    <div class="text">
+        <p>LOOPS</p>
+    </div>
+   
+    <div class="container">
+        <div class="slide">
+            <div class="item" style="background-image: url('images/solenoid.png')">
+                <div class="content">            
+                    <div class="name">Solenoid</div>
+                    <div class="des">A solenoid is a coil of wire that creates a magnetic field when an electric current passes through it. It is typically used to convert electrical energy into mechanical movement.</div>
+                    <button onclick="showDetails('solenoid')">See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('images/toroid.png');">
+                <div class="content">
+                    <div class="name">Toroid</div>
+                    <div class="des">A coil of wire wound into a ring-shaped (doughnut-shaped) core. It is similar to a solenoid but bent into a circular shape.</div>
+                    <button onclick="showDetails('toroid')">See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('images/straight.jpeg');">
+                <div class="content">
+                    <div class="name">Straight current carrying wire</div>
+                    <div class="des">A long, straight wire carrying current produces a circular magnetic field around it. The direction of the field follows the right-hand rule.</div>
+                    <button onclick="showDetails('straight')">See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('images/circular.jpg');">
+                <div class="content">
+                    <div class="name">Loop of Current</div>
+                    <div class="des">A circular loop of current generates a magnetic field similar to that of a small bar magnet. The field is strongest at the center of the loop.</div>
+                    <button onclick="showDetails('circular')">See More</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="button">
+            <button class="prev" onclick="prevSlide()"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+</section>
+
+<section id="details" class="hidden">
+    <h2 id="detailsTitle">Material Details</h2>
+    <p id="detailsContent"></p>
+    <button onclick="showWorkingPrinciple()" class="next-btn">Next</button>
+    <button onclick="hideDetails()" class="back-btn">Back</button>
+</section>
+    
+
+<section id="workingPrinciple" class="hidden">
+    <h2 id="principleTitle">Working Principle</h2>
+    <p id="principleContent"></p>
+    <button onclick="hidePrinciple()" class="back-btn">Back</button>
+</section>
+
+
+<script>
+    let currentMaterial='';
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".item");
+
+
+
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+ <!--Application-->
+ <section id="Application">
+    <div class="title-text">
+        
+        
+    </div>
+    
+        <h1>    REAL TIME APPLICATIONS </h1>
+    <div class ="Application-col">
+        <div class="info">
+            <img src="images/magnet.jpg">
+           
+            <div class="userinfo">
+                <h4> Magnetic Resonance Imaging (MRI) in Healthcare </h4>
+                
+            </div>
+        </div>
+        <p> Use Case: MRI scanners use strong magnetic fields and radio waves to generate detailed images of organs and tissues.<br>
+            Real-Time Aspect: Doctors use MRI in real-time to diagnose conditions like brain tumors, spinal cord injuries, and internal bleeding.</p>
+    </div>
+    <div class ="Application-col">
+        <div class="info">
+            <img src="images/magnet.jpg">
+            <div class="userinfo">
+                <h4>  Magnetic Levitation (Maglev) Trains </h4>
+               
+            </div>
+        </div>
+        <p> Use Case: Maglev trains use superconducting magnets to levitate above the track, reducing friction and allowing high-speed travel.<br>
+            Real-Time Aspect: The magnetic field dynamically adjusts to stabilize and control the train’s movement in real time.</p>
+    </div>
+    </div>
+
+
+
+    <div class ="Application-col">
+        <div class="info">
+            <img src="images/magnet.jpg">
+            <div class="userinfo">
+                
+                <h4>  Electromagnetic Induction in Wireless Charging </h4>
+                
+            </div>
+        </div>
+        <p>Use Case: Wireless chargers for smartphones, electric toothbrushes, and electric vehicles use magnetic fields to transfer energy without physical contact.<br>
+            Real-Time Aspect:  The charger continuously adjusts power transmission based on the device’s battery status and position.</p>
+    </div>
+
+
+
+    <div class="Application-col">
+        <div class="info">
+            <img src="images/magnet.jpg" >
+        </div>
+        <div class="userinfo">
+            <h4>Particle Accelerators (CERN) </h4>
+        </div>
+        <p>Use Case: Large Hadron Collider (LHC) uses magnetic fields to accelerate particles to near light speed.<br>
+        Real-Time Aspect: Scientists analyze real-time particle collisions to discover new physics phenomena.</p>
+    </div>
+    </div>
+ </section>
+
+
+     
+<script>
+        var menubutton=document.getElementById("menubutton")
+        var sideNav=document.getElementById("sideNav")
+        var menu=document.getElementById("menu")
+
+        sideNav.style.right="-250px";
+        menubutton.onclick=function(){
+            if(sideNav.style.right=="-250px"){
+                sideNav.style.right="0";
+                menu.src="images/close.png";
+            }
+            else{
+            sideNav.style.right="-250px";
+            menu.src="images/menu.png";
+        }
+       
+    }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+
+src="magnet.js" 
+
+    </script>
+    
+<script src ="connection/C:\Users\hita6\OneDrive\Desktop\projrct\c:\Users\hita6\OneDrive\Desktop\projrct\Local instance MySQL84.session.sql" ></script>
+<script src ="server.js"> </script>
+    </body>
+</html>

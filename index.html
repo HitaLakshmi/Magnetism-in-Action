@@ -388,7 +388,52 @@ menuButton.onclick = toggleMenu;
     
                 </div>
             </div>
-    
+    <script>
+        function toggleDarkMode() {
+    // Toggle the dark-mode class on the body
+    document.body.classList.toggle('dark-mode');
+
+    // Store the mode in localStorage so it persists after refreshing the page
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+// Check if user has previously selected dark mode
+window.onload = function() {
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
+}
+
+
+function filterMaterials() {
+    // Get the search input value
+    var input = document.querySelector('.search-box').value.toLowerCase();
+
+    // Get all material cards (single-box)
+    var materials = document.querySelectorAll('#types .single-box');
+
+    // Loop through each material
+    materials.forEach(function(material) {
+        // Get the data-name attribute and convert it to lowercase
+        var materialName = material.getAttribute('data-name').toLowerCase();
+        var textContent = material.textContent.toLowerCase();
+
+        // Check if input matches the data-name or text content
+        if (materialName.includes(input) || textContent.includes(input)) {
+            material.style.display = "block";
+        } else {
+            material.style.display = "none";
+        }
+    });
+}
+
+
+    </script>
     
         </div>
         

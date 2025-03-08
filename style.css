@@ -432,6 +432,10 @@ nav ul li a:hover {
     justify-content: flex-start;
     width: 100%;
 }
+.dark-mode #type{
+    background-color: #222;
+    color: white;
+}
 .single-box {
     background: white;
     border-radius: 10px;

@@ -5,16 +5,8 @@ function scrollToResult() {
     resultSection.style.marginTop = "50px"; // Add enough space
     resultSection.scrollIntoView({ behavior: "smooth" });
   }
-  
-  
-  
-  
-  
-  
-  
-  
   function showWorkingPrinciple() {
-      let principles = {
+      let principles  = {
           'solenoid': `
               <div class="principle-card">
                   <h2>🔩 Solenoid - Working Principle</h2>
@@ -303,6 +295,7 @@ function scrollToResult() {
 
 
     
+
 
 
 

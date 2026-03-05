@@ -9,14 +9,14 @@ function scrollToResult() {
       let principles  = {
           'solenoid': `
               <div class="principle-card">
-                  <h2>🔩 Solenoid - Working Principle</h2>
+                  <h2> Solenoid - Working Principle</h2>
                   <p class="highlight"><strong>How It Works:</strong> When an electric current flows through the coil, it creates a <strong>magnetic field</strong> along the axis.</p>
                   <ul class="styled-list">
                       <li><strong>Number of Turns:</strong> More turns = Stronger field</li>
                       <li><strong>Current Strength:</strong> Higher current = Stronger field</li>
                       <li><strong>Core Material:</strong> Iron core increases strength</li>
                   </ul>
-                  <h3>✨ Example:</h3>
+                  <h3> Example:</h3>
                   <p class="example">Electromagnets in <strong>door locks</strong> and <strong>solenoid valves</strong>.</p>
               </div>
                <div class="video-container">
@@ -25,13 +25,13 @@ function scrollToResult() {
           `,
           'toroid': `
               <div class="principle-card">
-                  <h2>🌀 Toroid - Working Principle</h2>
+                  <h2> Toroid - Working Principle</h2>
                   <p class="highlight"><strong>How It Works:</strong> A toroid generates a <strong>confined magnetic field</strong> inside its circular shape, ensuring efficiency.</p>
                   <ul class="styled-list">
                       <li><strong>Low Magnetic Leakage</strong> - Keeps the field enclosed</li>
                       <li><strong>Highly Efficient</strong> - Used for stable inductors</li>
                   </ul>
-                  <h3>✨ Example:</h3>
+                  <h3> Example:</h3>
                   <p class="example">Used in <strong>transformers</strong> and <strong>inductors</strong>.</p>
               
                <div class="video-container">
@@ -42,10 +42,10 @@ function scrollToResult() {
           `,
           'straight': `
               <div class="principle-card">
-                  <h2>⚡ Straight Wire - Working Principle</h2>
+                  <h2> Straight Wire - Working Principle</h2>
                   <p class="highlight"><strong>How It Works:</strong> A current-carrying straight wire generates a <strong>circular magnetic field</strong> around it.</p>
-                  <p class="rule">📌 <strong>Right-Hand Rule:</strong> Thumb = Current, Fingers = Magnetic Field</p>
-                  <h3>✨ Example:</h3>
+                  <p class="rule"> <strong>Right-Hand Rule:</strong> Thumb = Current, Fingers = Magnetic Field</p>
+                  <h3> Example:</h3>
                   <p class="example">Used in <strong>power transmission lines</strong>.</p>
               </div>
                <div class="video-container">
@@ -54,13 +54,13 @@ function scrollToResult() {
           `,
           'circular': `
               <div class="principle-card">
-                  <h2>🔄 Current Loop - Working Principle</h2>
+                  <h2> Current Loop - Working Principle</h2>
                   <p class="highlight"><strong>How It Works:</strong> A circular current loop acts like a <strong>bar magnet</strong>, creating a dipole-like magnetic field.</p>
                   <ul class="styled-list">
                       <li><strong>Strongest Field:</strong> At the center of the loop</li>
                       <li><strong>Magnetic Poles:</strong> Similar to a small bar magnet</li>
                   </ul>
-                  <h3>✨ Example:</h3>
+                  <h3> Example:</h3>
                   <p class="example">Used in <strong>MRI machines</strong> and <strong>sensors</strong>.</p>
               </div>
                <div class="video-container">
@@ -89,7 +89,7 @@ function scrollToResult() {
           let details = {
       'solenoid': `
           <div class="details-card">
-              <h2>🔩 Solenoid</h2>
+              <h2> Solenoid</h2>
               <p class="highlight">
                   <strong>What is it?</strong> A solenoid is a coil of wire that generates a <strong>magnetic field</strong> when current flows through it.
               </p>
@@ -97,13 +97,13 @@ function scrollToResult() {
                   <li>Used in <strong>electromagnets</strong>, <strong>relays</strong>, and <strong>solenoid valves</strong>.</li>
                   <li>Magnetic field strength increases with more <strong>turns</strong> and higher <strong>current</strong>.</li>
               </ul>
-              <p class="example">✨ Example: Automatic door locking systems.</p>
+              <p class="example"> Example: Automatic door locking systems.</p>
           </div>
       `,
   
       'toroid': `
           <div class="details-card">
-              <h2>🌀 Toroid</h2>
+              <h2> Toroid</h2>
               <p class="highlight">
                   <strong>What is it?</strong> A toroid is a coil wound into a <strong>ring shape</strong>, often used in transformers and inductors.
               </p>
@@ -111,28 +111,28 @@ function scrollToResult() {
                   <li><strong>Efficient magnetic confinement</strong> due to its closed-loop shape.</li>
                   <li>Common in <strong>power transformers</strong> and <strong>RF circuits</strong>.</li>
               </ul>
-              <p class="example">✨ Example: Toroidal inductors in power supplies.</p>
+              <p class="example"> Example: Toroidal inductors in power supplies.</p>
           </div>
       `,
   
       'straight': `
           <div class="details-card">
-              <h2>⚡ Straight Wire</h2>
+              <h2> Straight Wire</h2>
               <p class="highlight">
                   <strong>What is it?</strong> A current-carrying straight wire creates a <strong>circular magnetic field</strong> around it.
               </p>
-              <p class="rule">📌 <strong>Right-Hand Rule:</strong> Thumb = Current, Fingers = Magnetic Field</p>
+              <p class="rule"> <strong>Right-Hand Rule:</strong> Thumb = Current, Fingers = Magnetic Field</p>
               <ul class="styled-list">
                   <li>Basic concept in <strong>electromagnetism</strong>.</li>
                   <li>Used in <strong>power transmission lines</strong>.</li>
               </ul>
-              <p class="example">✨ Example: Electric wires in household circuits.</p>
+              <p class="example"> Example: Electric wires in household circuits.</p>
           </div>
       `,
   
       'circular': `
           <div class="details-card">
-              <h2>🔄 Current Loop</h2>
+              <h2> Current Loop</h2>
               <p class="highlight">
                   <strong>What is it?</strong> A circular current loop acts like a <strong>bar magnet</strong>, creating a dipole-like magnetic field.
               </p>
@@ -140,7 +140,7 @@ function scrollToResult() {
                   <li>Strongest magnetic field at the <strong>center</strong> of the loop.</li>
                   <li>Forms the basis of <strong>magnetic dipoles</strong>.</li>
               </ul>
-              <p class="example">✨ Example: Magnetic fields in MRI machines.</p>
+              <p class="example"> Example: Magnetic fields in MRI machines.</p>
           </div>
       `
   };
@@ -301,3 +301,4 @@ function scrollToResult() {
 
 
     
+

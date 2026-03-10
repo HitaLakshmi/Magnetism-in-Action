@@ -1,5 +1,3 @@
-
-// Function to add space and scroll down to result section
 function scrollToResult() {
     const resultSection = document.getElementById("resultSection");
     resultSection.style.marginTop = "50px"; // Add enough space
@@ -238,17 +236,6 @@ function scrollToResult() {
           
           wrapper.style.maxHeight = totalHeight + "px";
       }
-
-
-
-
-
-
-
-
-
-
-
       document.addEventListener("DOMContentLoaded", function () {
         let items = document.querySelectorAll('.item');
         let currentIndex = 0;
@@ -301,4 +288,5 @@ function scrollToResult() {
 
 
     
+
 

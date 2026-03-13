@@ -27,18 +27,4 @@ Insert into project.data values('Iron','High magnetic flux density and strong ma
 ('Lead	','Common superconducting material	','Superconductors','	Lead');
 
 
-
 SELECT * from project.data ;
-
-
-
-
-
-
-
-
-
-
-
-
-SELECT * FROM project.data;

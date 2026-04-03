@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-   
     let buttons = document.querySelectorAll('.see-more');
     buttons.forEach(function(button) {
         button.addEventListener('click',function () {

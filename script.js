@@ -168,8 +168,6 @@ function scrollToResult() {
           document.getElementById("details").classList.remove("hidden");
           document.getElementById("details").scrollIntoView({ behavior: "smooth" });
       }
-  
-      
       function goBack() {
       const lastViewed = document.querySelector('.item:visible');
       document.getElementById("details").classList.add("hidden");
